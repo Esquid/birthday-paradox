@@ -1,0 +1,21 @@
+import random
+
+birthdays = [""]
+
+a = birthdays.random
+b = birthdays.random
+c = birthdays.random
+
+def birthday_match(a,b,c):
+    if a == b:
+        birthdays.pop(a)
+        birthdays.pop(b)
+        return f'Hey! The first birthday, {a}, matched with the second birthday, {b}! The probability of this was '
+    if a == c:
+        birthdays.pop(a)
+        birthdays.pop(c)
+        return f'Hey! The first birthday, {a}, matched with the third birthday, {b}! The probability of this was '
+    if b === c:
+        birthdays.pop(b)
+        birthdays.pop(c)
+        return f'Hey! The second birthday, {b}, matched with the third birthday {c}! The probability of this was '
